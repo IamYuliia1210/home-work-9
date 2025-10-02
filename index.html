@@ -5,135 +5,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Site</title>
-  <!--------------------- FONTS ---------------------->
-  <!--------------------- NORMALIZE ---------------------->
-  <!---------------------CSS-STYLE--------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-  <!--------------------HEADER-------------------->
 
-  <header>
-    <div>
-      <nav>
-        <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>WORKS</li>
-          <li>PROCESS</li>
-          <li>CONTACTS</li>
-        </ul>
-      </nav>
+  <!--HEADER-->
+
+  <header class="header">
+    <div class="container">
+      <div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Works</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Process</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">Design and Layout</h1>
+        <p class="header__description">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem
+          Ipsum has been the standard
+          dummy text for Latin scripts since the 16th century.
+        </p>
+        <button class="header__btn">Write to me</button>
+      </div>
     </div>
   </header>
   <main>
 
-    <!--------------------HERO-------------------->
-    <section>
-      <div>
-        <h1>Design and Layout</h1>
-        <p>Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard
-          dummy text for Latin scripts since the 16th century.
-        </p>
-        <button>WRITE TO ME</button>
-      </div>
-    </section>
+    <!--ABOUT-->
 
-    <!--------------------ABOUT-------------------->
-    <section>
-      <div>
-        <h2>About Me</h2>
-        <p>Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard
+    <section class="about-box">
+      <div class="container">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-description">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem
+          Ipsum has been the standard
           dummy text for Latin scripts since the 16th century.
         </p>
       </div>
     </section>
 
-    <!--------------------NUMBERS -------------------->
-    <section>
-      <div style="background-color: #34547A; width: auto; height: 250px;">
-        <h2>NUMBERS</h2>
-        <ul>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-          <li>
-            <div>
-              <svg>
-                <use href="/img/Group 1.svg"></use>
-              </svg>
-              <span>40</span>
-              <sup>+</sup>
-            </div>
-          </li>
-        </ul>
+    <!--NUMBERS-->
+
+    <section class="numbers">
+      <h2 class="number__title">Numbers</h2>
+      <div class="numbers__container container">
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
+        <div class="numbers__project-card project-card">
+          <svg class="project-card__image">
+            <use href="/img/Group 1.svg"></use>
+          </svg>
+          <div class="project-card__info">
+            <span class="project-card__amount">40+</span>
+            <span class="project-card__name">projects</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--------------------WORK-------------------->
-    <section>
-      <div>
-        <h2>How I Work</h2>
-        <p>Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard
+    <!--WORK-->
+
+    <section class="work">
+      <div class="container">
+        <h2 class="work__title">How I Work</h2>
+        <p class="work__description">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem
+          Ipsum has been the standard
           dummy text for Latin scripts since the 16th century.
         </p>
-        <video src="">
-          <source>
-        </video>
+        <div class="work__wrap">
+          <div class="work__wrap--possition">
+            <svg class="work__imige--btn">
+              <use href="/img/play-button.svg"></use>
+            </svg>
+          </div>
+          <img class="work__imige--video" src="/img/video-img.png" alt="video">
+        </div>
       </div>
     </section>
 
-    <!--------------------FOOTER-------------------->
-    <footer>
-      <div>
-        <p>Yuliia Pukhova</p>
-         <span>&#169; 2025. All rights reserved.</span>
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <h3 class="foote__title">Yuliia Pukhova</h3>
+        <p class="footer__description">&#169; 2025. All rights reserved.</p>
       </div>
     </footer>
   </main>
-
 </body>
 
 </html>
